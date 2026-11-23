@@ -6,6 +6,22 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [ 
+      [ 
+        "expo-camera", 
+        { 
+          "cameraPermission": "Permitir que o AppRecursosSmart utilize a câmera para tirar fotografias.", 
+          "microphonePermission": "Permitir que o AppRecursosSmart utilize o microfone.", 
+          "recordAudioAndroid": true 
+        } 
+      ],
+       [ 
+        "expo-location", 
+        { 
+          "locationWhenInUsePermission": "Permitir que o AppRecursosSmart acesse sua localização enquanto estiver utilizando o aplicativo." 
+        } 
+      ] 
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -21,5 +37,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     }
+    
   }
 }
